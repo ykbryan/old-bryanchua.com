@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+.timeago{
+	display:block;
+	margin-bottom:5px;
+	width:100%;
+	text-align:right;
+}
+.lifestream-twitter{
+	padding-left:30px;
+	background:url(../images/icon-twitter.png) no-repeat left top;
+}
+.lifestream-flickr{
+	padding-left:30px;
+	background:url(../images/icon-flickr.png) no-repeat left top;
+}
+.lifestream-youtube{
+	padding-left:30px;
+	background:url(../images/icon-youtube.png) no-repeat left top;
+}

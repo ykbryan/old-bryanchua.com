@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+.jp-progress{
+	overflow:hidden;
+	background-color:#DDD;
+	height:5px;
+	width:50px;
+	margin-top:6px;
+}
+.jp-seek-bar{
+	cursor:pointer;
+}
+.jp-play-bar{
+	height:5px;
+	background-color:#333;
+}
+.jp-volume-bar-value{
+	height:5px;
+	background-color:#000;
+}
+.jp-volume-bar{
+	overflow:hidden;
+	width:50px;
+	height:5px;
+	cursor:pointer;
+	border:1px solid #000;
+}
+.jp-playlist li{
+	padding-left:30px;
+	background:url(../images/icon-mp3.png) no-repeat left top;
+}
+.jp-playlist-current a{
+	font-weight:800;
+}
+.jp-controls, .jp-controls li, .jp-toggles, .jp-toggles li, .jp-progress, .jp-toggles{
+	float:left;
+	position:relative;
+}
+.jp-controls li, .jp-toggles li{
+	padding-left:4px;
+	list-style:none;
+	font-size:10px
+}
+#sidebar .jp-controls a, #sidebar .jp-toggles a, #sidebar .jp-playlist-item{
+	border-bottom:none;
+}
+#mp3controller{
+	position:absolute;
+	right:20px;
+	top:33px;
+}
