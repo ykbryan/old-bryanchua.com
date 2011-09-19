@@ -88,6 +88,7 @@
     
     <link type='text/css' rel='stylesheet' href='<?php bloginfo('template_directory'); ?>/css/lifestream.css'>
     <link type='text/css' rel='stylesheet' href='<?php bloginfo('template_directory'); ?>/css/jplayer.css'>
+    <link type='text/css' rel='stylesheet' href='<?php bloginfo('template_directory'); ?>/css/comment.css'>
     <link type='text/css' rel='stylesheet' href='<?php bloginfo('template_directory'); ?>/css/base.css'>
 	<link type="text/css" rel='stylesheet' href="<?php bloginfo('template_directory'); ?>/css/ui-lightness/jquery-ui-1.8.16.custom.css">
 	<link type="text/css" rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/colorbox.css" media="screen" /> 

@@ -2,46 +2,46 @@
 </div>
 <div id="footer">
     <div class="wrapper">
-        <div style="width:375px; border-left:1px solid #8E8E80; min-height:100px; margin:20px 0px 20px 0px; float:left">
+        <div style="width:375px; border-left:1px solid #EEE; min-height:100px; margin:20px 0px 20px 0px; float:left">
         	<div style="padding:10px; margin-left:20px">
             	<img src="<?php bloginfo('template_directory'); ?>/images/profile.png" class="img_wrapper" style="float:left; margin-right:20px; margin-bottom:20px">
-                <p><span style="color:#F6F7ED; font-family: Arial; font-size: 20px; text-shadow:#6C6C63 0 2px 0">ABOUT</span> me</p>
+                <p><span style="font-size: 20px; text-shadow:#FFF 0 2px 0">ABOUT</span> me</p>
                 <em style="font-size:10px">coming soon</em>
             </div>
         </div>
-        <div style="width:300px; border-left:1px solid #8E8E80; min-height:100px; margin:20px 0px 20px 0px; float:left">
+        <div style="width:300px; border-left:1px solid #EEE; min-height:100px; margin:20px 0px 20px 0px; float:left">
         	<div style="padding:10px; float:left; margin-left:15px;">
                 <img src="<?php bloginfo('template_directory'); ?>/images/jquery.png" width="20" style="float:left; padding-top:10px; margin-right:20px">
-                <span style="color:#F6F7ED; font-size:12px">built</span>
-                <span style="color:#58584F; text-shadow: #909083 0 1px 0;"> using</span> <br />
+                <span style="color:#474747; font-size:12px">built</span>
+                <span style="color:#58584F; text-shadow: #FFF 0 1px 0;"> using</span> <br />
                 <em style="font-size:12px"><a href="http://www.jquery.com">jQuery</a></em>
             </div>
         	<div style="padding:10px; float:left">
                 <img src="<?php bloginfo('template_directory'); ?>/images/jqueryui.png" width="20" style="float:left; padding-top:10px; margin-right:15px">
-                <span style="color:#F6F7ED; font-size:12px">built</span>
-                <span style="color:#58584F; text-shadow: #909083 0 1px 0;"> using</span> <br />
+                <span style="color:#474747; font-size:12px">built</span>
+                <span style="color:#58584F; text-shadow: #FFF 0 1px 0;"> using</span> <br />
                 <em style="font-size:12px"><a href="http://www.jqueryui.com">jQuery UI</a></em>
             </div>
         	<div style="padding:10px; margin-left:15px; float:left">
                 <img src="<?php bloginfo('template_directory'); ?>/images/apple.png" width="20" style="float:left; padding-top:10px; margin-right:20px">
-                <span style="color:#F6F7ED; font-size:12px">made</span>
-                <span style="color:#58584F; text-shadow: #909083 0 1px 0;"> on</span> <br />
+                <span style="color:#474747; font-size:12px">made</span>
+                <span style="color:#58584F; text-shadow: #FFF 0 1px 0;"> on</span> <br />
                 <em style="font-size:12px"><a href="http://www.apple.com">Mac</a></em>
             </div>
         	<div style="padding:10px; margin-left:15px; float:left">
                 <img src="<?php bloginfo('template_directory'); ?>/images/wordpress.png" width="25" style="float:left; padding-top:10px; margin-right:15px">
-                <span style="color:#F6F7ED; font-size:12px">powered</span>
-                <span style="color:#58584F; text-shadow: #909083 0 1px 0;"> by</span> <br />
+                <span style="color:#474747; font-size:12px">powered</span>
+                <span style="color:#58584F; text-shadow: #FFF 0 1px 0;"> by</span> <br />
                 <em style="font-size:12px"><a href="http://www.wordpress.com">Wordpress</a></em>
             </div>
         	<div style="padding:10px; margin-left:20px; float:left">
                 <img src="<?php bloginfo('template_directory'); ?>/images/godaddy-logo-only.png" width="20" style="float:left; padding-top:10px; margin-right:15px">
-                <span style="color:#F6F7ED; font-size:12px">hosted</span>
-                <span style="color:#58584F; text-shadow: #909083 0 1px 0;"> by</span> <br />
+                <span style="color:#474747; font-size:12px">hosted</span>
+                <span style="color:#58584F; text-shadow: #FFF 0 1px 0;"> by</span> <br />
                 <em style="font-size:12px"><a href="http://www.godaddy.com">GoDaddy</a></em>
             </div>
         </div>
-        <div style="width:240px; border-left:1px solid #8E8E80; min-height:100px; margin:20px 0px 20px 0px; float:left; padding:10px">
+        <div style="width:240px; border-left:1px solid #EEE; min-height:100px; margin:20px 0px 20px 0px; float:left; padding:10px">
         	<?php get_search_form(); ?>
         </div>
     </div>
@@ -119,7 +119,7 @@
 
 
 $('#cbox').jflickrfeed({
-	limit: 10,
+	limit: 15,
 	qstrings: {
 		id: '67370375@N02'
 	},
@@ -130,13 +130,17 @@ $('#cbox').jflickrfeed({
 				  '</li>'
 }, function(data) {
 	$('#cbox a').colorbox();
+	$("#flickr img").hover(function(){
+		$(this).stop().animate({backgroundColor: "#EEE"});
+	}, function(){
+		$(this).stop().animate({backgroundColor: "#D6D6D6"});
+	});
 });
 
-
 $(".img_wrapper, .article-body img").hover(function(){
-	$(this).stop().animate({backgroundColor: "#5A5A4E"});
+	$(this).stop().animate({backgroundColor: "#C6C6C6"});
 }, function(){
-	$(this).stop().animate({backgroundColor: "#6A6A5E"});
+	$(this).stop().animate({backgroundColor: "#D6D6D6"});
 });
 $("div#lifestream a, #footer .wrapper a, .article-footer a, .article-body a").live("mouseenter", function(){
 	$(this).stop().animate({borderBottomColor: "#BBE9ED"});
@@ -145,11 +149,11 @@ $("div#lifestream a, #footer .wrapper a, .article-footer a, .article-body a").li
 	$(this).stop().animate({borderBottomColor: "#8D8E7F"});
 });
 $("input.searchKeyword").live("mouseenter", function(){
-	$(this).stop().animate({backgroundColor: "#F6F7ED"});
+	$(this).stop().animate({backgroundColor: "#FFF"});
 });
 $("input.searchKeyword").live("mouseleave", function(){
 	if(!$(this).val())
-		$(this).stop().animate({backgroundColor: "#838375"});
+		$(this).stop().animate({backgroundColor: "#EEE"});
 });
 
   var _gaq = _gaq || [];
@@ -163,7 +167,6 @@ $("input.searchKeyword").live("mouseleave", function(){
   })();
 
 </script>
--->
 	
 </body>
 

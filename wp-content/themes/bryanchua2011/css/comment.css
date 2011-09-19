@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#commentform{
+	position:relative;
+	overflow:hidden;
+	font-size:12px;
+}
+#commentform label{
+	display:block;
+	margin-bottom:7px;
+	font-size:14px;
+}
+
+#commentform p{
+	margin-bottom:20px;
+}
+
+#respond{
+	padding:10px;
+	background-color:#D6D6D6;
+	position:relative;
+	margin-bottom:40px;
+}
+
+#commentform textarea{
+	height:124px;
+	margin-top:25px;
+	
+}
+
+#commentform textarea, #commentform input{
+	display:block;
+	margin-bottom:10px;
+	background-color:#EEE;
+	border-top:none;
+	border-left:none;
+	border-bottom:1px solid #FFF;
+	border-right:1px solid #FFF;
+	margin-right:10px;
+	width:300px;
+}
+
+#respond code{
+	font-size:10px;
+	font-style:italic;
+}
+
+#respond #submit{
+	width:305px;
+}

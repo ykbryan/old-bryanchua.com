@@ -5,7 +5,7 @@
 	background-color:#DDD;
 	height:5px;
 	width:50px;
-	margin-top:6px;
+	margin-top:5px;
 }
 .jp-seek-bar{
 	cursor:pointer;
@@ -48,4 +48,8 @@
 	position:absolute;
 	right:20px;
 	top:33px;
+}
+#mp3controller a, #mp3controller a:hover{
+	color:#F6F7ED;
+	text-shadow:none;
 }

@@ -12,6 +12,7 @@ time, mark, audio, video {
     border: 0;
     font-family: Helvetica, Arial, sans-serif;
     vertical-align: baseline;
+	font-size:15px;
 }
 
 article, aside, details, figcaption, figure,
@@ -38,12 +39,12 @@ html {
 }
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 #sidebar a{
-    color: #BBE9ED;
+    color: #006AB1;
 	text-decoration:none;
-	border-bottom: 1px solid #8D8E7F;
+	text-shadow: 0 1px 0px #FFF;
 }
 #sidebar a:hover{
-    color: #D3D2C4;
+    color: #999;
 }
 
 ul, ol {
